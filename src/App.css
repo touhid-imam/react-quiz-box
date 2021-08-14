@@ -1,0 +1,56 @@
+.quiz-modal{
+  position: absolute;
+  left: 27.4%;
+  top: 35%;
+  z-index: 9;
+  transform: scale(0);
+  transition: 500ms ease-in-out;
+}
+
+.modal-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.modal-show{
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+ /* Mobile Device */
+@media only screen and (max-width : 680px) {
+  .quiz-modal{
+    width: 90% !important;
+    left: 5%;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
